@@ -1,0 +1,20 @@
+.btn {
+  color: rgb(11, 12, 16);
+  font-size: 1.125rem; //18px
+  font-weight: 250;
+  text-align: center;
+  width: 123px;
+  padding: 8px 0;
+  border-radius: 5px;
+  background: rgb(69, 162, 158);
+  transition: 0.2s;
+  @media (hover: hover) {
+    &:hover {
+      transform: rotate(5deg);
+    }
+  }
+  &:active {
+    transform: scale(0.9);
+    transition: 0.05s;
+  }
+}

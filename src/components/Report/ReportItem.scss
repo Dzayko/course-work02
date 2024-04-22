@@ -1,0 +1,42 @@
+.item {
+  display: flex;
+  border: 1px solid rgb(69, 162, 158);
+  font-size: 0.875rem; //14px
+  padding: 0.93em; //13px
+}
+.item__vendor {
+  color: rgb(197, 198, 199);
+  flex: 0 0 50%;
+}
+
+.item__status-container {
+  flex: 0 0 50%;
+}
+
+.item__status-info {
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  margin-left: 5px;
+  display: inline-block;
+  transform: translateY(-1px);
+  &.harmless {
+    color: rgb(102, 252, 241);
+  }
+  &.undetected {
+    color: rgb(87, 97, 117);
+  }
+  &.malicious {
+    color: rgb(253, 117, 112);
+  }
+  &.suspicious {
+    color: rgb(255, 243, 113);
+  }
+}
+
+@media (max-width: 650px) {
+  .item__status-container {
+    text-align: right;
+  }
+}
